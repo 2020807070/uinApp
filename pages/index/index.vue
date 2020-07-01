@@ -1,6 +1,7 @@
 <template>
 	<view class="wrapper">
-		<view class="main">
+		1231231
+<!-- 		<view class="main">
 			<home v-if="tab === 'home'" />
 			<match v-if="tab === 'match'" />
 			<online v-if="tab === 'online'" />
@@ -14,7 +15,7 @@
 					<view :class="['footer-text', {'active': tab === navItem.key } ]">{{ navItem.name }}</view>
 				</view>
 			</view>
-		</view>
+		</view> -->
 	</view>
 </template>
 

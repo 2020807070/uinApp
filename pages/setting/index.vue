@@ -1,9 +1,9 @@
 <template>
 	<view class="pages">
-		<cover-view class="header" :style="headStyle">
+		<view class="header" :style="headStyle">
 			<image class="header-icon" src="../../static/home/more.png" mode=""></image>
-			<cover-view class="header-text">设置</cover-view>
-		</cover-view>
+			<view class="header-text">设置</view>
+		</view>
 		<view class="main" :style="mainStyle">
 			<view>000</view>
 			<view>000</view>
@@ -14,6 +14,7 @@
 			<view>123</view>
 			<view>123</view>
 			<view>123</view>
+			<view>5555555</view>
 			<view>123</view>
 			<view>123</view>
 			<view>123</view>
@@ -55,25 +56,7 @@
 			<view>123</view>
 			<view>123</view>
 			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
-			<view>123</view>
+			<view>999</view>
 		</view>
 	</view>
 </template>
@@ -142,7 +125,8 @@
 	}
 
 	.pages {
-		height: 100%;
+		overflow: hidden;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 	}
@@ -151,7 +135,7 @@
 
 	.main {
 		flex: 1;
-		height: 1208upx;
-		background-color: rgb(238, 238, 238);
+		overflow: scroll;
+		background-color: red;
 	}
 </style>

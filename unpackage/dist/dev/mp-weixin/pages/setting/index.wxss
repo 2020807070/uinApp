@@ -4,7 +4,6 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding-bottom: 18rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -19,8 +18,8 @@
 	margin-left: 17rpx;
 	width: 17rpx;
 	height: 32rpx;
-	-webkit-transform: scale(-1 ,-1);
-	        transform: scale(-1 ,-1);
+	-webkit-transform: scale(-1, -1);
+	        transform: scale(-1, -1);
 }
 .header-text {
 	position: absolute;
@@ -30,7 +29,8 @@
 	font-size: 36rpx;
 }
 .pages {
-	height: 100%;
+	overflow: hidden;
+	height: 100vh;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -44,7 +44,7 @@
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	        flex: 1;
-	height: 1208rpx;
-	background-color: rgb(238, 238, 238);
+	overflow: scroll;
+	background-color: red;
 }
 

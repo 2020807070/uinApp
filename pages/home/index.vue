@@ -1,67 +1,71 @@
 <template>
 	<view class="home">
+		<view class="nav-bar">
+			<image src="../../static/common/logo.png" mode=""></image>
+			<view></view>
+			<view></view>
+		</view>
 		<view class="home-title"></view>
 		<view class="scroll-tab"></view>
 		<view class="home-banner">
-			<image src="../../static/online/01.png" mode=""></image>
-		</view>
-		<view class="sub-tittle">
-			习近平：充分认识颁布实施民法典重大意义 依法更好保障人民权益 
+			<image src="../../static/home/banner.png" mode=""></image>
 		</view>
 		<view class="home-list">
-			<view class="home-list__title">2020二套房的判断标准是什么</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
+			<view class="home-list-item">
+				<view class="home-list-item__top">
+					<view class="home-list-item__tit">宪法知识答题主题</view>
+					<view class="home-list-item__date">2020/06/01-2020/06/30</view>
+				</view>
+				<view class="home-list-item__btm">
+					<view class="home-list-item__content">《中华人民共和国宪法》是中华国的根本大法，规定拥有最高法律效力。中华人和国成立后，</view>
+					<view class="home-list-item__btn">去答题</view>
 				</view>
 			</view>
 		</view>
 		<view class="home-list">
-			<view class="home-list__title">2020二套房的判断标准是什么</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
+			<view class="home-list-item">
+				<view class="home-list-item__top">
+					<view class="home-list-item__tit">宪法知识答题主题</view>
+					<view class="home-list-item__date">2020/06/01-2020/06/30</view>
+				</view>
+				<view class="home-list-item__btm">
+					<view class="home-list-item__content">《中华人民共和国宪法》是中华国的根本大法，规定拥有最高法律效力。中华人和国成立后，</view>
+					<view class="home-list-item__btn">去答题</view>
 				</view>
 			</view>
 		</view>
 		<view class="home-list">
-			<view class="home-list__title">维护国家安全，应当遵守宪法和坚持会主义法治原则，尊重和保障人权，依…</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
+			<view class="home-list-item">
+				<view class="home-list-item__top">
+					<view class="home-list-item__tit">宪法知识答题主题</view>
+					<view class="home-list-item__date">2020/06/01-2020/06/30</view>
+				</view>
+				<view class="home-list-item__btm">
+					<view class="home-list-item__content">《中华人民共和国宪法》是中华国的根本大法，规定拥有最高法律效力。中华人和国成立后，</view>
+					<view class="home-list-item__btn">去答题</view>
 				</view>
 			</view>
 		</view>
 		<view class="home-list">
-			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
+			<view class="home-list-item">
+				<view class="home-list-item__top">
+					<view class="home-list-item__tit">婚姻法答题</view>
+					<view class="home-list-item__date">2020/06/01-2020/06/30</view>
+				</view>
+				<view class="home-list-item__btm">
+					<view class="home-list-item__content">《中华人民共和国宪法》是中华国的根本大法，规定拥有最高法律效力。中华人和国成立后，</view>
+					<view class="home-list-item__btn disabled">查看</view>
 				</view>
 			</view>
 		</view>
-		<view class="sub-banner">
-			<image src="../../static/online/02.png" mode=""></image>
-		</view>
-		<view class="sub-nav">
-			<view>劳动法</view>
-			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
+		<view class="sub-title">
+			<view class="sub-title-main">
+				<image style="width: 39upx;height: 36upx;padding: 0 18upx;" src="../../static/home/star.png" mode=""></image>
+				<view class="sub-title__black">在线</view>
+				<view class="sub-title__red">学法</view>
+				<image style="width: 39upx;height: 36upx;" src="../../static/home/star.png" mode=""></image>
+			</view>
+			<image class="sub-title__more" src="../../static/home/more.png" mode=""></image>
 		</view>
 		<view class="home-list">
 			<view class="home-list__container">
@@ -70,163 +74,6 @@
 			</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__container">
-				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
-			</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="sub-nav">
-			<view>每日播报</view>
-			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
-		</view>
-		<view class="home-live">
-			<image src="../../static/online/05.png" mode=""></image>
-			<view class="home-live__timer">06:26</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-			</view>
-		</view>
-		<view class="sub-nav">
-			<view>新婚姻法</view>
-			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
-		</view>
-		<view class="suv-nav__title">今日劳动法热门</view>
-		<view class="home-live">
-			<image src="../../static/online/06.png" mode=""></image>
-			<view class="home-live__timer">06:26</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="sub-nav">
-			<view>刑事法</view>
-			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
-		</view>
-		<view class="home-live">
-			<image src="../../static/online/01.png" mode=""></image>
-			<view class="home-live__timer">06:26</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__container">
-				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
-			</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__container">
-				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
-			</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__container">
-				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
-			</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="sub-nav">
-			<view>每日学法</view>
-			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
-		</view>
-		<view class="home-live">
-			<image src="../../static/online/05.png" mode=""></image>
-			<view class="home-live__timer">06:26</view>
-		</view>
-		<view class="sub-nav">
-			<view>未成年人保护法</view>
-			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
-		</view>
-		<view class="suv-nav__title">2020新未成年人保护法</view>
-		<view class="home-live">
-			<image src="../../static/online/07.png" mode=""></image>
-			<view class="home-live__timer">06:26</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
-				</view>
-			</view>
-		</view>
-		<view class="home-list">
-			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
 				<view class="home-list__date">2020-06-16</view>
 				<view class="home-list__player">
 					<image src="../../static/online/audio.png" mode=""></image>
@@ -241,7 +88,6 @@
 			</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
 				<view class="home-list__date">2020-06-16</view>
 				<view class="home-list__player">
 					<image src="../../static/online/audio.png" mode=""></image>
@@ -250,10 +96,12 @@
 			</view>
 		</view>
 		<view class="home-list">
-			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
+			<view class="home-list__container">
+				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
+				<image class="home-list__cover" src="../../static/online/03.png" mode=""></image>
+			</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
 				<view class="home-list__date">2020-06-16</view>
 				<view class="home-list__player">
 					<image src="../../static/online/audio.png" mode=""></image>
@@ -261,51 +109,189 @@
 				</view>
 			</view>
 		</view>
-		<view class="sub-nav">
-			<view>新法推荐</view>
-			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
+		<view class="sub-title">
+			<view class="sub-title-main">
+				<image style="width: 39upx;height: 36upx;padding: 0 18upx;" src="../../static/home/star.png" mode=""></image>
+				<view class="sub-title__black">法律</view>
+				<view class="sub-title__red">要闻</view>
+				<image style="width: 39upx;height: 36upx;" src="../../static/home/star.png" mode=""></image>
+			</view>
+			<image class="sub-title__more" src="../../static/home/more.png" mode=""></image>
 		</view>
-		<view class="home-list">
-			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
+		<view class="news-list">
+			<view class="new-list__l">
+				<view class="new-list__t">国家安全法律法规知识看这里</view>
+				<view class="new-list__c">全国人大常委会通过新的国家安全法，将4月15日定为全民国家安全教育通…</view>
+				<view class="new-list__i">
+					<text style="margin-right: 14upx;">劳动法</text>
+					<text>2020-06-16</text>
 				</view>
 			</view>
+			<image class="new-list__r" src="../../static/online/05.png" mode=""></image>
 		</view>
-		<view class="home-list">
-			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
-			<view class="home-list__info">
-				<view class="home-list__name">民事法</view>
-				<view class="home-list__commit">37评</view>
-				<view class="home-list__date">2020-06-16</view>
-				<view class="home-list__player">
-					<image src="../../static/online/audio.png" mode=""></image>
-					<view>播放</view>
+		<view class="news-list">
+			<view class="new-list__l">
+				<view class="new-list__t">国家安全法律法规知识看这里</view>
+				<view class="new-list__c">全国人大常委会通过新的国家安全法，将4月15日定为全民国家安全教育通…</view>
+				<view class="new-list__i">
+					<text style="margin-right: 14upx;">劳动法</text>
+					<text>2020-06-16</text>
 				</view>
+			</view>
+			<image class="new-list__r" src="../../static/online/06.png" mode=""></image>
+		</view>
+		<view class="news-list">
+			<view class="new-list__l">
+				<view class="new-list__t">2020二套房的判断标准是什么</view>
+				<view class="new-list__c">全国人大常委会通过新的国家安全法，将4月15日定为全民国家安全教育通…</view>
+				<view class="new-list__i">
+					<text style="margin-right: 14upx;">劳动法</text>
+					<text>2020-06-16</text>
+				</view>
+			</view>
+			<image class="new-list__r" src="../../static/online/05.png" mode=""></image>
+		</view>
+		<view class="news-list">
+			<view class="new-list__l">
+				<view class="new-list__t">国家安全法律法规知识看这里</view>
+				<view class="new-list__c">全国人大常委会通过新的国家安全法，将4月15日定为全民国家安全教育通…</view>
+				<view class="new-list__i">
+					<text style="margin-right: 14upx;">劳动法</text>
+					<text>2020-06-16</text>
+				</view>
+			</view>
+			<image class="new-list__r" src="../../static/online/07.png" mode=""></image>
+		</view>
+		<view class="sub-title">
+			<view class="sub-title-main">
+				<image style="width: 39upx;height: 36upx;padding: 0 18upx;" src="../../static/home/star.png" mode=""></image>
+				<view class="sub-title__black">法务</view>
+				<view class="sub-title__red">知识库</view>
+				<image style="width: 39upx;height: 36upx;" src="../../static/home/star.png" mode=""></image>
+			</view>
+			<image class="sub-title__more" src="../../static/home/more.png" mode=""></image>
+		</view>
+		<view class="knowledge-list">
+			<image class="knowledge-list__banner" src="../../static/online/06.png" mode=""></image>
+			<view class="knowledge-list__info">
+				<view class="knowledge-list__title">扫黑除恶法律法规知识</view>
+				<view class="knowledge-list__date">2020-06-16</view>
+			</view>
+			<view class="knowledge-list__content">
+				扫黑律法规知识扫黑除恶法律法规知识扫黑除恶法律法规知识扫黑除恶法律法规知识扫黑除恶法律法规知识扫黑除恶法…
+			</view>
+		</view>
+		<view class="knowledge-list">
+			<image class="knowledge-list__banner" src="../../static/online/04.png" mode=""></image>
+			<view class="knowledge-list__info">
+				<view class="knowledge-list__title">扫黑除恶法律法规知识</view>
+				<view class="knowledge-list__date">2020-06-16</view>
+			</view>
+			<view class="knowledge-list__content">
+				扫黑律法规知识扫黑除恶法律法规知识扫黑除恶法律法规知识扫黑除恶法律法规知识扫黑除恶法律法规知识扫黑除恶法…
 			</view>
 		</view>
 	</view>
 </template>
 
 <style>
+	.home {
+		height: 100%;
+		background-color: rgb(245, 245, 245);
+		padding-bottom: 100upx;
+	}
+	
 	.home-banner image{
 		width: 100%;
 		height: 446upx;
 		background-color: #ffffff;
 	}
-	.sub-tittle {
-		padding: 10upx 13upx;;
-		font-weight: bolder;
-		font-size: 40upx;
-	}
+	
 	.home-list {
-		margin: 0 15upx;
-		padding: 28upx 0;
+		background-color: #FFFFFF;
+	}
+	
+	.home-list-item {
+		width: 727upx;
+		margin-left: 13upx;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1upx solid rgba(0, 0, 0, .3);
+		padding: 22upx 0;
+	}
+	
+	.home-list-item__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.home-list-item__btm {
+		margin-top: 20upx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.home-list-item__content {
+		font-size: 24upx;
+		width: 500upx;
+		color: rgba(0, 0, 0, .7);
+	}
+	.home-list-item__btn{
+		width: 202upx;
+		height: 62upx;
+		background-color: #bf1111;
+		border-radius: 31upx;
+		color: #fff;
+		font-size: 34upx;
+		text-align: center;
+		line-height: 62upx;
+	 }
+	
+	.disabled {
+		background-color: #a0a0a0;
+	}
+	.home-list-item__tit {
+		font-size: 34upx;
+	}
+	.home-list-item__date {
+		font-size: 20upx;
+	}
+	.sub-title {
+		position: relative;
+		margin-top: 73upx;
+		padding: 17upx 0;
+		border-bottom: 1px solid rgba(0, 0, 0, .3);
+		background-color: #FFFFFF;
+	}
+	.sub-title-main {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+	.sub-title__red {
+		font-weight: bolder;
+		color: rgb(191, 17, 17);
+	}
+	.sub-title__black {
+		font-weight: bolder;
+		color: #000000;
+	}
+	
+	.sub-title__more {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 15upx;
+		height: 28upx;
+		right: 17upx;
+	}
+	
+	.home-list {
+		padding: 28upx 15upx;
 		border-bottom: 1upx solid rgba(0,0,0,.3);
 	}
 	.home-list__title {
@@ -331,7 +317,7 @@
 	.home-list__date {
 		font-size: 23upx;
 		color: #959595;
-		margin-right: 230upx;
+		margin-right: 330upx;
 	}
 	.home-list__player {
 		display: flex;
@@ -364,59 +350,71 @@
 		height: 122upx;
 		border-radius: 6upx;
 	}
-	.sub-banner image{
-		width: 716upx;
-		height: 267upx;
-		margin: 14upx;
+	.news-list {
+		padding: 32upx 0;
+		background-color: #FFFFFF;
+		display: flex;
+		padding-left: 21upx;
+		border-bottom: 1upx solid rgba(0, 0, 0, .3);
 	}
-	
-	.sub-nav {
-		margin-top: 49upx;
-		margin: 32upx;
-		position: relative;
-		border-left: 10upx solid #dd1d11;
-		margin-left: 15upx;
-		height: 38upx;
-		line-height: 38upx;
-		text-indent: 19upx;
+	.new-list__l {
+		width: 420upx;
 	}
-	
-	.sub-nav__more {
-		position: absolute;
-		top: 0;
-		right: 19upx;
-		width: 17upx;
-		height: 29upx;
+	.new-list__r {
+		margin-left: 25upx;
+		width: 271upx;
+		height: 183upx;
+		border-radius: 6upx;
 	}
-	
-	.suv-nav__title {
-		margin-left: 19upx;
-		margin-bottom: 12upx;
-		font-size: 36upx;
+	.new-list__t {
+		font-weight: 600;
+		font-size: 30upx;
 	}
-	.home-live {
-		position: relative;
-		height: 376upx;
-	}
-	.home-live image{
-		width: 716upx;
-		height: 376upx;
-		border-radius: 10upx;
-		margin-left: 17upx;
-	}
-	
-	.home-live__timer {
-		position: absolute;
-		left: 31upx;
-		font-size: 26upx;
-		bottom: 14upx;
-		width: 119upx;
-		height: 40upx;
-		text-align: center;
-		line-height: 40upx;
-		color: #fff;
-		background-color: #000000;
-		border-radius: 10upx;
+	.new-list__c {
+		font-size: 24upx;
+		color: #313131;
 		opacity: 0.7;
+		margin: 22upx 0 30upx 0;
+	}
+	.new-list__i {
+		font-size: 22upx;
+		color: #959595;
+		opacity: 0.8;
+	}
+	.knowledge-list {
+		background-color: #FFFFFF;
+		padding: 0 20upx;
+		padding-top: 18upx;
+		border-bottom: 1upx solid rgba(0, 0, 0, .3);
+	}
+	.knowledge-list__banner {
+		width: 715upx;
+		height: 385upx;
+		border-radius: 10upx;
+	}
+	
+	.knowledge-list__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 22upx 0 16upx 0;
+	}
+	
+	.knowledge-list__title {
+		font-size: 24upx;
+		font-weight: bold;
+		
+	}
+	.knowledge-list__date {
+		font-size: 23upx;
+		color: #959595;
+		opacity: 0.8;
+	}
+	
+	.knowledge-list__content {
+		font-size: 21upx;
+		color: #000000;
+		opacity: 0.7;
+		margin-bottom: 21upx;
 	}
 </style>

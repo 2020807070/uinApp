@@ -30,5 +30,19 @@
     "backgroundColor": "#FFFFFF",
     "scrollIndicator": "none"
   },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/nav/home.png",
+        "selectedIconPath": "static/nav/home-a.png",
+        "text": "主页"
+      }
+    ]
+  },
   "usingComponents": {}
 }

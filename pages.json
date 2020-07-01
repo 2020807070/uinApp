@@ -1,6 +1,6 @@
 {
 	"pages": [{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
@@ -55,14 +55,14 @@
 		},
 		{
 			"path": "pages/setting/index",
-			"style":{
-			    "navigationBarTitleText":"长内容主标题文本主标题文本主标题文本主标题文本",
-			    "app-plus":{
-			      "titleNView":{
-			        "titleColor": "#FF0000"
-			      }
-			    }
-			  }
+			"style": {
+				"navigationBarTitleText": "长内容主标题文本主标题文本主标题文本主标题文本",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "#FF0000"
+					}
+				}
+			}
 		},
 		{
 			"path": "pages/sign/index",
@@ -83,21 +83,43 @@
 			}
 		}
 	],
-	"subPackages": [{
-		"root": "pageA",
-		"pages": [{
-			"path": "test/index",
-			"style": {
-				"navigationBarTitleText": "测试"
-			}
-		}]
-	}],
 	"globalStyle": {
-		"navigationStyle":"custom",
+		"navigationStyle": "custom",
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF",
 		"scrollIndicator": "none"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/nav/home.png",
+				"selectedIconPath": "static/nav/home-a.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/match/index",
+				"iconPath": "static/nav/match.png",
+				"selectedIconPath": "static/nav/match-a.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/online/index",
+				"iconPath": "static/nav/online.png",
+				"selectedIconPath": "static/nav/online-a.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/nav/me.png",
+				"selectedIconPath": "static/nav/me-a.png",
+				"text": "个人中心"
+			}
+		]
 	}
 }
