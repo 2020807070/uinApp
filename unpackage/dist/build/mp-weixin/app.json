@@ -4,9 +4,24 @@
     "pages/match/index",
     "pages/mine/index",
     "pages/online/index",
-    "pages/match/index"
+    "pages/center/index",
+    "pages/onlineAnswer/index",
+    "pages/rank/index",
+    "pages/record/index",
+    "pages/search/index",
+    "pages/setting/index",
+    "pages/sign/index",
+    "pages/study/index",
+    "pages/article/index"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "pageA",
+      "pages": [
+        "test/index"
+      ]
+    }
+  ],
   "window": {
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white",

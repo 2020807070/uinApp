@@ -1,0 +1,1 @@
+<view class="pages"><view class="header"><uni-nav-bar vue-id="287468b6-1" left-icon="arrowleft" title="错题学习" data-event-opts="{{[['^clickLeft',[['back']]]]}}" bind:clickLeft="__e" bind:__l="__l"></uni-nav-bar></view><view class="main"></view></view>

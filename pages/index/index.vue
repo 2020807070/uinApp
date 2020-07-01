@@ -6,8 +6,14 @@
 			<online v-if="tab === 'online'" />
 			<mine v-if="tab === 'mine'" />
 		</view>
-		<view class="footer">
-			<view class="footer-item" v-for="(navItem, ind) in tabList" :key="ind" @click="togglePages(navItem)">{{ navItem.name }}</view>
+		<view class="footer" @click="aaa">
+			<view class="footer-item" v-for="(navItem, ind) in tabList" :key="ind" @click="togglePages(navItem)">
+				<image class="footer-img"  v-if="navItem.src" :src="tab === navItem.key ? navItem.srcA : navItem.src" mode=""></image>
+				<view v-else>
+					<image class="footer-icon" v-if="navItem.icon" :src="tab === navItem.key ? navItem.iconA : navItem.icon" mode=""></image>
+					<view :class="['footer-text', {'active': tab === navItem.key } ]">{{ navItem.name }}</view>
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -25,18 +31,26 @@
 				tabList: [{
 						name: '首页',
 						key: 'home',
+						icon: '../../static/nav/home.png',
+						iconA: '../../static/nav/home-a.png',
 					},
 					{
+						src: '../../static/nav/match.png',
+						srcA: '../../static/nav/match-a.png',
 						name: '答题竞赛',
 						key: 'match',
 					},
 					{
+						src: '../../static/nav/online.png',
+						srcA: '../../static/nav/online-a.png',
 						name: '在线学习',
 						key: 'online',
 					},
 					{
 						name: '个人中心',
 						key: 'mine',
+						icon: '../../static/nav/me.png',
+						iconA: '../../static/nav/me-a.png',
 					},
 				]
 			};
@@ -48,6 +62,9 @@
 			online
 		},
 		methods: {
+			aaa (e) {
+				e.preventDefault();
+			},
 			togglePages(item) {
 				this.tab = item.key;
 			}
@@ -62,6 +79,7 @@
 		align-items: center;
 	}
 	.wrapper {
+		overflow: hidden;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -85,5 +103,22 @@
 
 	.footer-item {
 		flex: 1;
+		text-align: center;
+	}
+	
+	.footer-img {
+		width: 90upx;
+		height: 90upx;
+	}
+	.footer-text {
+		font-size: 24upx;
+	}
+	.footer-icon {
+		width: 39upx;
+		height: 40upx;
+	}
+	
+	.active {
+		color: rgb(37, 163, 203);
 	}
 </style>

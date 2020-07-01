@@ -9,51 +9,51 @@
 				<view class="user-info">
 					<image class="user-head" src="../../static/nav/match-a.png" mode=""></image>
 					<view class="user-name">甲乙丙丁</view>
-					<view class="setting">
+					<view class="setting" @click="goPage('setting')">
 						<image class="setting-icon" src="../../static/mine/setting.png"></image>
 						<view class="setting-text">设置</view>
 					</view>
-					<view class="count">
+					<view class="count" @click="goPage('center')">
 						<view class="count-num">10</view>积分
 					</view>
 				</view>
 			</view>
-			<view class="list-item">
+			<view class="list-item" @click="goPage('record')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/record.png" mode="" style="width: 36upx;height: 42upx;"></image>
 				</view>
 				<view class="list-item-text">答题记录</view>
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
-			<view class="list-item">
+			<view class="list-item"  @click="goPage('search')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/search.png" mode="" style="width: 34upx;height: 34upx;"></image>
 				</view>
 				<view class="list-item-text">错题查询</view>
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
-			<view class="list-item">
+			<view class="list-item"  @click="goPage('study')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/study_history.png" mode="" style="width: 40upx;height: 40upx;"></image>
 				</view>
 				<view class="list-item-text">学习记录</view>
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
-			<view class="list-item">
+			<view class="list-item"  @click="goPage('sign')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/sign.png" mode="" style="width: 36upx;height: 42upx;"></image>
 				</view>
 				<view class="list-item-text">标记题目</view>
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
-			<view class="list-item">
+			<view class="list-item"  @click="goPage('record')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/collection.png" mode="" style="width: 40upx;height: 32upx;"></image>
 				</view>
 				<view class="list-item-text">收藏</view>
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
-			<view class="list-item">
+			<view class="list-item"  @click="goPage('center')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/integral.png" mode="" style="width: 34upx;height: 36upx;"></image>
 				</view>
@@ -61,14 +61,14 @@
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
 
-			<view class="list-item">
+			<view class="list-item"  @click="goPage('record')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/service.png" mode="" style="width: 34upx;height: 34upx;"></image>
 				</view>
 				<view class="list-item-text">在线咨询</view>
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
-			<view class="list-item">
+			<view class="list-item"  @click="goPage('record')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/history.png" mode="" style="width: 30upx;height: 30upx;"></image>
 				</view>
@@ -79,6 +79,27 @@
 	</view>
 </template>
 
+<script>
+	export default {
+		data () {
+			return {
+				top: 48,
+			}
+		},
+		mounted () {
+			// this.top = wx.getMenuButtonBoundingClientRect().top;
+			console.log(wx.getMenuButtonBoundingClientRect());
+		},
+		methods: {
+			goPage (path) {
+				uni.navigateTo({
+					url: `/pages/${path}/index`
+				});
+			}
+		}
+	}
+	
+</script>
 
 <style>
 

@@ -1,6 +1,7 @@
 {
-  "navigationBarTitleText": "uni-000.213",
+  "navigationBarTitleText": "首页",
   "usingComponents": {
+    "van-button": "/wxcomponents/vant/dist/button/index",
     "home": "/pages/home/index",
     "mine": "/pages/mine/index",
     "match": "/pages/match/index",
