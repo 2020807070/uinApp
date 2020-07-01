@@ -1,0 +1,40 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "uni-000.213"
+		}
+	},
+	{
+		"path": "pages/match/index",
+		"style": {
+			"navigationBarTitleText": "比赛"
+		}
+	},
+	{
+		"path": "pages/mine/index",
+		"style": {
+			"navigationBarTitleText": "uni-000.213"
+		}
+	},
+	{
+		"path": "pages/online/index",
+		"style": {
+			"navigationBarTitleText": "在线学习"
+		}
+	},
+	{
+		"path": "pages/match/index",
+		"style": {
+			"navigationBarTitleText": "uni-000.213"
+		}
+	}],
+	"globalStyle": {
+		"navigationStyle":"custom",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF",
+		"scrollIndicator": "none"
+	}
+}

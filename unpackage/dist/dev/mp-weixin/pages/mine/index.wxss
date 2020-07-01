@@ -1,0 +1,111 @@
+
+.user-wrap {
+	position: relative;
+	height: 182rpx; /* 202 */
+	background-color: rgb(37, 163, 203);
+	margin-bottom: 184rpx;
+}
+.user-title {
+	position: relative;
+}
+.logo {
+	position: absolute;
+	top: 66rpx;
+	width: 122rpx;
+	height: 36rpx;
+	left: 20rpx;
+}
+.title {
+	position: absolute;
+	top: 66rpx;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	color: #fff;
+	font-size: 30rpx;
+}
+.user-head {
+	margin-top: 35rpx;
+	margin-left: 35rpx;
+	width: 114rpx;
+	height: 114rpx;
+	border-radius: 50%;
+}
+.user-name {
+	position: absolute;
+	font-size: 19px;
+	top: 65rpx;
+	left: 168rpx;
+}
+.setting {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	position: absolute;
+	top: 21rpx;
+	right: 24rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.setting-icon {
+	margin-right: 11rpx;
+	width: 34rpx;
+	height: 34rpx;
+}
+.setting-text {
+	font-size: 14px;
+}
+.count {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	position: absolute;
+	bottom: 20rpx;
+	right: 24rpx;
+	font-size: 30rpx;
+	color: #c00000;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	        align-items: flex-end;
+}
+.count-num {
+	margin-right: 10rpx;
+	font-size: 50rpx;
+}
+.list-item {
+	position: relative;
+	width: 696rpx;
+	margin: 0 30rpx;
+	margin-top: 40rpx;
+	padding-bottom: 16rpx;
+	font-size: 26rpx;
+	color: #1a1a1a;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 2rpx solid rgba(0, 0, 0, .1);
+}
+.list-item-icon {
+	text-align: center;
+	width: 36rpx;
+	height: 42rpx;
+	margin-right: 16rpx;
+}
+.list-item-arrow {
+	position: absolute;
+	right: 10rpx;
+	width: 16rpx;
+	height: 30rpx;
+}
+.user-info {
+	position: absolute;
+	top: 144rpx; /*174 */
+	width: 692rpx;
+	height: 184rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 2rpx 8rpx 0rpx rgba(0, 0, 0, 0.16);
+	border-radius: 10rpx;
+	margin-left: 30rpx;
+}
+
