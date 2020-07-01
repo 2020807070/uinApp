@@ -26,59 +26,81 @@
 		{
 			"path": "pages/center/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "积分中心"
 			}
 		},
 		{
 			"path": "pages/onlineAnswer/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "在线答题"
 			}
 		},
 		{
 			"path": "pages/rank/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "成绩排行"
 			}
 		},
 		{
 			"path": "pages/record/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "答题记录"
 			}
 		},
 		{
 			"path": "pages/search/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "错题查询"
 			}
 		},
 		{
 			"path": "pages/setting/index",
 			"style": {
-				"navigationBarTitleText": "长内容主标题文本主标题文本主标题文本主标题文本",
-				"app-plus": {
-					"titleNView": {
-						"titleColor": "#FF0000"
-					}
-				}
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "设置"
 			}
 		},
 		{
 			"path": "pages/sign/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "错题标记"
 			}
 		},
 		{
 			"path": "pages/study/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "错题学习"
 			}
 		},
 		{
 			"path": "pages/article/index",
 			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "文章页"
 			}
 		}

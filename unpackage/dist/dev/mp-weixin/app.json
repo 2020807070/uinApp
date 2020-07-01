@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/home/index",
     "pages/match/index",
     "pages/mine/index",
     "pages/online/index",
@@ -14,14 +14,7 @@
     "pages/study/index",
     "pages/article/index"
   ],
-  "subPackages": [
-    {
-      "root": "pageA",
-      "pages": [
-        "test/index"
-      ]
-    }
-  ],
+  "subPackages": [],
   "window": {
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white",
@@ -41,8 +34,27 @@
         "iconPath": "static/nav/home.png",
         "selectedIconPath": "static/nav/home-a.png",
         "text": "主页"
+      },
+      {
+        "pagePath": "pages/match/index",
+        "iconPath": "static/nav/match.png",
+        "selectedIconPath": "static/nav/match-a.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/online/index",
+        "iconPath": "static/nav/online.png",
+        "selectedIconPath": "static/nav/online-a.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/nav/me.png",
+        "selectedIconPath": "static/nav/me-a.png",
+        "text": "个人中心"
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

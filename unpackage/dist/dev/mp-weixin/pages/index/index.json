@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "首页",
-  "usingComponents": {
-    "home": "/pages/home/index",
-    "mine": "/pages/mine/index",
-    "match": "/pages/match/index",
-    "online": "/pages/online/index"
-  }
-}

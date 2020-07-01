@@ -92,11 +92,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components = {
-  uniNavBar: function() {
-    return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 130))
-  }
-}
+var components
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -134,7 +130,22 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -145,13 +156,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 var _default =
 {
-  methods: {
-    back: function back() {
-      uni.navigateBack({
-        delta: 1 });
+  data: function data() {
+    return {
+      ranklist: [
+      {
+        count: 300,
+        name: '逃之夭夭' },
 
-    } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+      {
+        count: 250,
+        name: '防辐射' },
+
+      {
+        count: 240,
+        name: '黄眼睛' },
+
+      {
+        count: 230,
+        name: '大大发' },
+
+      {
+        count: 10,
+        name: '的地方' },
+
+      {
+        count: 5,
+        name: '大大' }] };
+
+
+
+  } };exports.default = _default;
 
 /***/ }),
 
