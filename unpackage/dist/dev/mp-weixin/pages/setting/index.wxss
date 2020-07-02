@@ -1,50 +1,49 @@
 
-.header {
-	position: fixed;
+.setting {
+	height: 94vh;
+	background-color: rgb(238, 238, 238);
+	overflow: hidden;
+}
+.setting-btn {
+	text-align: center;
+	line-height: 80rpx;
+	letter-spacing: 5rpx;
+	color: rgba(0, 0, 0, .8);
+	background-color: #FFFFFF;
 	width: 100%;
-	top: 0;
-	left: 0;
+	margin-top: 30rpx;
+	font-size: 30rpx;
+	height: 80rpx;
+}
+.setting-mian {
+	overflow: hidden;
+	margin-top: 30rpx;
+}
+.setting-item {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	        align-items: center;
-	z-index: 999;
-	height: 80rpx;
 	background-color: #FFFFFF;
+	border-bottom: 1rpx solid rgba(0, 0, 0, .1);
+	padding: 26rpx 30rpx;
+	font-size: 26rpx;
+	color: rgba(0, 0, 0, .7);
+	padding-right: 50rpx;
 }
-.header-icon {
-	margin-left: 17rpx;
+.setting-item .icon {
+	position: absolute;
+	right: 15rpx;
 	width: 17rpx;
 	height: 32rpx;
-	-webkit-transform: scale(-1, -1);
-	        transform: scale(-1, -1);
 }
-.header-text {
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
-	font-size: 36rpx;
-}
-.pages {
-	overflow: hidden;
-	height: 100vh;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-}
-.header {}
-.main {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	        flex: 1;
-	overflow: scroll;
-	background-color: red;
+.head {
+	width: 80rpx;
+	height: 80rpx;
 }
 

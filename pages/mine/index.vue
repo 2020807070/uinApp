@@ -13,7 +13,7 @@
 						<image class="setting-icon" src="../../static/mine/setting.png"></image>
 						<view class="setting-text">设置</view>
 					</view>
-					<view class="count" @click="goPage('center')">
+					<view class="count" @click="goPage('rank')">
 						<view class="count-num">10</view>积分
 					</view>
 				</view>

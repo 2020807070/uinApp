@@ -1,5 +1,5 @@
 
-.pages {
+.search {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -8,9 +8,60 @@
 	-webkit-flex-direction: column;
 	        flex-direction: column;
 }
-.main {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	        flex: 1;
+.search-list {
+	margin: 0 21rpx;
+	padding-top: 33rpx;
+	padding-bottom: 15rpx;
+	border-bottom: 1rpx solid rgba(0, 0, 0, .2);
+}
+.search-list__content {
+	font-size: 30rpx;
+	line-height: 51rpx;
+	margin-bottom: 30rpx;
+}
+.search-list__info {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 23rpx;
+}
+.search-list__name {
+	font-size: 23rpx;
+	color: #000000;
+	opacity: 0.5;
+	width: 87rpx;
+}
+.search-list__date {
+	color: #000000;
+	opacity: 0.5;
+	font-size: 23rpx;
+	width: 187rpx;
+}
+.search-list__status {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	width: 120rpx;
+	position: absolute;
+	right: 0rpx;
+}
+.search-list__status view {
+	color: #000000;
+	opacity: 0.5;
+	font-size: 21rpx;
+}
+.search-list__status image {
+	width: 23rpx;
+	height: 23rpx;
+	color: #000000;
+	opacity: 0.5;
+	margin-right: 8rpx;
+}
+.success {
+	color: #25a3cb;
 }
 

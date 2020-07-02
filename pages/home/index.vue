@@ -196,6 +196,7 @@
 
 <style>
 	.home {
+		overflow-x: hidden;
 		height: 100%;
 		background-color: rgb(245, 245, 245);
 		padding-bottom: 100upx;
