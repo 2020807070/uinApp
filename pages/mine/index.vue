@@ -61,14 +61,14 @@
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
 
-			<view class="list-item"  @click="goPage('record')">
+			<view class="list-item"  @click="goPage('proposal')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/service.png" mode="" style="width: 34upx;height: 34upx;"></image>
 				</view>
 				<view class="list-item-text">在线咨询</view>
 				<image class="list-item-arrow" src="../../static/home/more.png" mode=""></image>
 			</view>
-			<view class="list-item"  @click="goPage('record')">
+			<view class="list-item"  @click="goPage('proposal')">
 				<view class="list-item-icon">
 					<image src="../../static/mine/history.png" mode="" style="width: 30upx;height: 30upx;"></image>
 				</view>

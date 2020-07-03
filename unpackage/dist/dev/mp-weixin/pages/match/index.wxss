@@ -58,7 +58,7 @@
 }
 .match-item__content {
 	width: 510rpx;
-	font-size: 10rpx;
+	font-size: 20rpx;
 	letter-spacing: 0rpx;
 	color: #000000;
 	opacity: 0.7;

@@ -1,0 +1,1 @@
+<view class="proposal"><textarea value="{{text}}" placeholder="请输入建议/反馈" data-event-opts="{{[['input',[['__set_model',['','text','$event',[]]]]]]}}" bindinput="__e"></textarea><text class="len">{{text.length+"/300"}}</text><view class="button">提交</view></view>

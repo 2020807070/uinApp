@@ -3,7 +3,7 @@
 		<image class="banner" src="../../static/home/banner.png" mode=""></image>
 		<view class="match-list">
 			<view class="match-item">
-				<image class="match-item__cover" src="../../static/online/01.png" mode=""></image>
+				<image class="match-item__cover" src="../../static/online/05.png" mode=""></image>
 				<view class="match-item__info">
 					<view class="match-item__info_top">
 						<view class="match-item__tit">宪法知识答题主题</view>
@@ -11,7 +11,7 @@
 					</view>
 					<view class="match-item__info_bottom">
 						<view class="match-item__content">《中华人民共和国宪法》是中华人民共和国的根本大法，规定拥有最高法律效力。中华人民共和国成立后，</view>
-						<view class="match-item__btn">去答题</view>
+						<view class="match-item__btn" @click="goAsk">去答题</view>
 					</view>
 				</view>
 			</view>
@@ -24,7 +24,7 @@
 					</view>
 					<view class="match-item__info_bottom">
 						<view class="match-item__content">《中华人民共和国宪法》是中华人民共和国的根本大法，规定拥有最高法律效力。中华人民共和国成立后，</view>
-						<view class="match-item__btn disabled">查看</view>
+						<view class="match-item__btn disabled" @click="goDetail">查看</view>
 					</view>
 				</view>
 			</view>
@@ -32,6 +32,22 @@
 	</view>
 </template>
 
+<script>
+	export default {
+		methods: {
+			goAsk () {
+				uni.navigateTo({
+					url: `/pages/onlineAnswer/index`
+				});
+			},
+			goDetail () {
+				uni.navigateTo({
+					url: `/pages/study/index`
+				});
+			}
+		}
+	}
+</script>
 <style>
 	.banner {
 		width: 100%;
@@ -90,7 +106,7 @@
 
 	.match-item__content {
 		width: 510upx;
-		font-size: 10upx;
+		font-size: 20upx;
 		letter-spacing: 0upx;
 		color: #000000;
 		opacity: 0.7;

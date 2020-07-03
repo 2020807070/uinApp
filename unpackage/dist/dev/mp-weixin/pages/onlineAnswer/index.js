@@ -92,15 +92,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components = {
-  uniNavBar: function() {
-    return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 111))
-  }
-}
+var components
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var l0 = _vm.__map(_vm.answerList, function(answerItem, ind) {
+    var g0 = _vm.currArr.indexOf(ind)
+    return {
+      $orig: _vm.__get_orig(answerItem),
+      g0: g0
+    }
+  })
+
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        l0: l0
+      }
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -134,7 +146,57 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -145,13 +207,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 var _default =
 {
-  methods: {
-    back: function back() {
-      uni.navigateBack({
-        delta: 1 });
+  data: function data() {
+    return {
+      isSort: false,
+      title: '还有题目没有答，是否确认提交？',
+      isMask: false,
+      currArr: [],
+      answerList: [
+      'A、  乡、镇级人民政府司法行政部门',
+      'B、  县级以上地方人民政府司法行政部门',
+      'C、  地市级人民政府司法行政部门',
+      'D、  省级人民政府司法行政部门'] };
 
+
+  },
+  methods: {
+    sortShow: function sortShow() {
+      this.isSort = true;
+    },
+    sortHide: function sortHide() {
+      this.isSort = false;
+    },
+    maskHide: function maskHide() {
+      this.isMask = false;
+    },
+    maskShow: function maskShow() {
+      if (this.currArr.length === 0) {
+        this.title = '还有题目没有答，是否确认提交？';
+      } else {
+        this.title = '提交后答案不可更改，是否确认提交？';
+      }
+      this.isMask = true;
+    },
+    check: function check(currInd) {
+      var ind = this.currArr.indexOf(currInd);
+      if (ind === -1) {
+        this.currArr.push(currInd);
+      } else {
+        this.currArr.splice(ind, 1);
+      }
     } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

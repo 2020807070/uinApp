@@ -1,6 +1,6 @@
 <template>
 	<view class="search">
-		<view class="search-list">
+		<view class="search-list" @click="goDetail">
 			<view class="search-list__content">《中华人民共和国宪法》是中华人民共和国的根本大法，规定拥有最高法律效力。中华人民共和国成立…</view>
 			<view class="search-list__info">
 				<view class="search-list__name">宪法</view>
@@ -71,11 +71,11 @@
 <script>
 	export default {
 		methods: {
-			back() {
-				uni.navigateBack({
-					delta: 1
-				})
-			},
+			goDetail() {
+				uni.navigateTo({
+					url: `/pages/study/index`
+				});
+			}
 		}
 	}
 </script>

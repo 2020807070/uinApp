@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "比赛",
+  "navigationBarTitleText": "答题竞赛",
+  "navigationStyle": "default",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
   "usingComponents": {}
 }

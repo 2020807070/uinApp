@@ -1,14 +1,27 @@
 <template>
-	<view class="home">
+	<view class="online">
+		<view class="nav-bar">
+			<image class="logo" src="../../static/common/logo.png" mode=""></image>
+			<view class="input">
+				<image src="../../static/home/搜索.png" mode=""></image>
+				<input type="text" placeholder="立即答题">
+			</view>
+			<view class="count">
+				<view class="text">积分</view>
+				<view class="num">250</view>
+			</view>
+		</view>
+		<scroll-view class="scroll-tab" scroll-x="true">
+			<view @click="checkItem(item)" :class="['tab-item', {'active': item === currItem}]" v-for="(item, ind) in scrollList">{{ item }}</view>
+		</scroll-view>
 		<view class="home-title"></view>
-		<view class="scroll-tab"></view>
 		<view class="home-banner">
 			<image src="../../static/online/01.png" mode=""></image>
 		</view>
 		<view class="sub-tittle">
 			习近平：充分认识颁布实施民法典重大意义 依法更好保障人民权益 
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020二套房的判断标准是什么</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -20,7 +33,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020二套房的判断标准是什么</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -32,7 +45,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">维护国家安全，应当遵守宪法和坚持会主义法治原则，尊重和保障人权，依…</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -44,7 +57,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -63,7 +76,7 @@
 			<view>劳动法</view>
 			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__container">
 				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 				<image class="home-list__cover" src="../../static/online/03.png" mode=""></image>
@@ -78,7 +91,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__container">
 				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
@@ -101,7 +114,7 @@
 			<image src="../../static/online/05.png" mode=""></image>
 			<view class="home-live__timer">06:26</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
 				<view class="home-list__commit">37评</view>
@@ -117,7 +130,7 @@
 			<image src="../../static/online/06.png" mode=""></image>
 			<view class="home-live__timer">06:26</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -129,7 +142,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -149,7 +162,7 @@
 			<image src="../../static/online/01.png" mode=""></image>
 			<view class="home-live__timer">06:26</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__container">
 				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
@@ -164,7 +177,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__container">
 				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
@@ -179,7 +192,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__container">
 				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 				<image class="home-list__cover" src="../../static/online/04.png" mode=""></image>
@@ -211,7 +224,7 @@
 			<image src="../../static/online/07.png" mode=""></image>
 			<view class="home-live__timer">06:26</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
 				<view class="home-list__commit">37评</view>
@@ -222,7 +235,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -234,7 +247,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__container">
 				<view class="home-list__content">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 				<image class="home-list__cover" src="../../static/online/03.png" mode=""></image>
@@ -249,7 +262,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -265,7 +278,23 @@
 			<view>新法推荐</view>
 			<image  class="sub-nav__more" src="../../static/home/more.png"></image>
 		</view>
-		<view class="home-list">
+		<scroll-view class="scroll-wrap" scroll-x="true">
+			<view class="scroll-item">
+				<image class="scroll-item__cover" src="../../static/online/01.png" mode=""></image>
+				<view class="scroll-item__info">
+					<view class="title">颁布新民法典的重大意义</view>
+					<view class="name">民事法</view>
+				</view>
+			</view>
+			<view class="scroll-item">
+				<image class="scroll-item__cover" src="../../static/online/06.png" mode=""></image>
+				<view class="scroll-item__info">
+					<view class="title">颁布新民法典的重大意义</view>
+					<view class="name">民事法</view>
+				</view>
+			</view>
+		</scroll-view>
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -277,7 +306,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="home-list">
+		<view class="home-list" @click="goArticle">
 			<view class="home-list__title">2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定2020年婚姻法新规定</view>
 			<view class="home-list__info">
 				<view class="home-list__name">民事法</view>
@@ -291,8 +320,30 @@
 		</view>
 	</view>
 </template>
-
+<script>
+	export default {
+		data () {
+			return {
+				currItem: '全部',
+				scrollList: ['全部', '劳动法', '婚姻法', '民事法', '刑事法', '刑事法2', '未成年人保护法',]
+			}
+		},
+		methods: {
+			goArticle () {
+				uni.navigateTo({
+					url: `/pages/article/index`
+				});
+			},
+			checkItem (item) {
+				this.currItem = item;
+			}
+		}
+	}
+</script>
 <style>
+	.online {
+		background-color: rgb(245, 245, 245);
+	}
 	.home-banner image{
 		width: 100%;
 		height: 446upx;
@@ -419,4 +470,117 @@
 		border-radius: 10upx;
 		opacity: 0.7;
 	}
+	.nav-bar {
+		display: flex;
+		align-items: center;
+		background-color: #25a3cb;
+		padding: 10upx 0;
+	}
+	
+	.logo {
+		width: 122upx;
+		height: 36upx;
+		padding: 0 12upx;
+	}
+	
+	.input {
+		display: flex;
+		width: 440upx;
+		height: 50upx;
+		background-color: rgb(146, 209, 209);
+		border-radius: 25upx;
+		align-items: center;
+	}
+	
+	.input image {
+		margin: 0 12upx;
+		width: 25upx;
+		height: 25upx;
+	}
+	
+	.input input {
+		width: 80%;
+		font-size: 20upx;
+		color: rgb(94, 135, 148);
+	}
+	
+	.count {
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+	}
+	
+	.count .text {
+		font-size: 28upx;
+		margin-right: 6upx;
+		margin-left: 19upx;
+	}
+	
+	.count .num {
+		font-size: 45upx;
+	}
+	
+	.scroll-wrap {
+		width: 100%;
+		white-space: nowrap;
+		height: 400upx;
+	}
+	.scroll-item {
+		display: flex;
+		flex-direction: column;
+		margin: 0 11upx;
+		display: inline-block;
+		width: 438upx;
+		height: 380upx;
+		background-color: #ffffff;
+		box-shadow: 0upx 1upx 7upx 0upx 
+			rgba(0, 0, 0, 0.16);
+		border-radius: 10upx;
+	}
+	
+	.scroll-item__cover {
+		height: 271upx;
+		width: 100%;
+		border-top-right-radius: 10upx;
+		border-top-left-radius: 10upx;
+	}
+	
+	.scroll-item__info {
+		width: 109upx;
+		margin-left: 12upx;
+		padding-bottom: 10upx;
+		
+	}
+	.scroll-item__info .title {
+		font-size: 34upx;
+	}
+	.scroll-item__info .name{
+		margin-top: 10upx;
+		color: #959595;
+		font-size: 23upx;
+	 }
+	 
+	 .scroll-tab {
+		padding-top: 15upx;
+	 	width: 100%;
+	 	white-space: nowrap;
+	 	height: 67upx;
+	 	background-color: #FFFFFF;
+	 }
+	 
+	 .tab-item {
+		text-align: center;
+		width: 109upx;
+		height: 48upx;
+		font-size: 28upx;
+	 	display: inline-block;
+	 	color: #898989;
+	 	margin: 0 10upx;
+	 }
+	 
+	 
+	 .active {
+		color: #bf1111;
+		border-bottom: 5upx solid #bf1111;
+	 }
 </style>

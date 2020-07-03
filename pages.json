@@ -2,13 +2,19 @@
 	"pages": [{
 			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "首页",
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black"
 			}
 		},
 		{
 			"path": "pages/match/index",
 			"style": {
-				"navigationBarTitleText": "比赛"
+				"navigationBarTitleText": "答题竞赛",
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black"
 			}
 		},
 		{
@@ -20,7 +26,10 @@
 		{
 			"path": "pages/online/index",
 			"style": {
-				"navigationBarTitleText": "在线学习"
+				"navigationBarTitleText": "在线学习",
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black"
 			}
 		},
 		{
@@ -69,6 +78,15 @@
 			}
 		},
 		{
+			"path": "pages/proposal/index",
+			"style": {
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "意见/建议"
+			}
+		},
+		{
 			"path": "pages/setting/index",
 			"style": {
 				"navigationStyle":"default",
@@ -101,7 +119,7 @@
 				"navigationStyle":"default",
 				"navigationBarBackgroundColor": "#ffffff",
 				"navigationBarTextStyle":"black",
-				"navigationBarTitleText": "文章页"
+				"navigationBarTitleText": ""
 			}
 		}
 	],

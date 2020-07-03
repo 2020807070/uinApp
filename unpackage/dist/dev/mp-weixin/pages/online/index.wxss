@@ -1,4 +1,7 @@
 
+.online {
+	background-color: rgb(245, 245, 245);
+}
 .home-banner image{
 	width: 100%;
 	height: 446rpx;
@@ -124,5 +127,120 @@
 	background-color: #000000;
 	border-radius: 10rpx;
 	opacity: 0.7;
+}
+.nav-bar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background-color: #25a3cb;
+	padding: 10rpx 0;
+}
+.logo {
+	width: 122rpx;
+	height: 36rpx;
+	padding: 0 12rpx;
+}
+.input {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width: 440rpx;
+	height: 50rpx;
+	background-color: rgb(146, 209, 209);
+	border-radius: 25rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.input image {
+	margin: 0 12rpx;
+	width: 25rpx;
+	height: 25rpx;
+}
+.input input {
+	width: 80%;
+	font-size: 20rpx;
+	color: rgb(94, 135, 148);
+}
+.count {
+	color: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.count .text {
+	font-size: 28rpx;
+	margin-right: 6rpx;
+	margin-left: 19rpx;
+}
+.count .num {
+	font-size: 45rpx;
+}
+.scroll-wrap {
+	width: 100%;
+	white-space: nowrap;
+	height: 400rpx;
+}
+.scroll-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin: 0 11rpx;
+	display: inline-block;
+	width: 438rpx;
+	height: 380rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 1rpx 7rpx 0rpx 
+		rgba(0, 0, 0, 0.16);
+	border-radius: 10rpx;
+}
+.scroll-item__cover {
+	height: 271rpx;
+	width: 100%;
+	border-top-right-radius: 10rpx;
+	border-top-left-radius: 10rpx;
+}
+.scroll-item__info {
+	width: 109rpx;
+	margin-left: 12rpx;
+	padding-bottom: 10rpx;
+}
+.scroll-item__info .title {
+	font-size: 34rpx;
+}
+.scroll-item__info .name{
+	margin-top: 10rpx;
+	color: #959595;
+	font-size: 23rpx;
+}
+.scroll-tab {
+	padding-top: 15rpx;
+ 	width: 100%;
+ 	white-space: nowrap;
+ 	height: 67rpx;
+ 	background-color: #FFFFFF;
+}
+.tab-item {
+	text-align: center;
+	width: 109rpx;
+	height: 48rpx;
+	font-size: 28rpx;
+ 	display: inline-block;
+ 	color: #898989;
+ 	margin: 0 10rpx;
+}
+.active {
+	color: #bf1111;
+	border-bottom: 5rpx solid #bf1111;
 }
 

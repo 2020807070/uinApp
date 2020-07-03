@@ -203,9 +203,9 @@ __webpack_require__.r(__webpack_exports__);
 var _default =
 {
   methods: {
-    back: function back() {
-      uni.navigateBack({
-        delta: 1 });
+    goDetail: function goDetail() {
+      uni.navigateTo({
+        url: "/pages/study/index" });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

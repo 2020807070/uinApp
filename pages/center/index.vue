@@ -78,7 +78,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding: 15upx 0;
+		padding: 20upx 0;
 		border-bottom: 1upx solid rgba(0, 0, 0, .3);
 	}
 	
@@ -92,7 +92,6 @@
 		height: 93upx;
 		border-right: 1upx solid rgba(0, 0, 0, .3);
 		font-size: 25upx;
-		margin-bottom: 18upx;
 		color: #000000;
 		opacity: 0.8;
 	}

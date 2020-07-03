@@ -1,16 +1,47 @@
 
-.pages {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
+.article {
+	background-color: rgb(238, 238, 238);
+	overflow: hidden;
 }
-.main {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	        flex: 1;
+.article-wrap {
+	margin-top: 30rpx;
+	background-color: #FFFFFF;
+	margin-bottom: 100rpx;
+}
+.article-title {
+	font-weight: 600;
+	font-size: 45rpx;
+	padding: 10rpx 15rpx;
+}
+.article-date {
+	margin-left: 15rpx;
+	font-size: 25rpx;
+	padding: 10rpx 0;
+	color: rgba(0, 0, 0, .6);
+}
+.article-content {
+	margin-top: 30rpx;
+	text-indent: 2em;
+	margin-left: 15rpx;
+	font-size: 35rpx;
+	padding: 10rpx 0;
+	color: rgba(0, 0, 0, .8);
+}
+.share {
+	border-top: 3rpx solid rgba(0, 0, 0, .3);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	height: 100rpx;
+}
+.share image {
+	position: absolute;
+	width: 50rpx;
+	height: 49rpx;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	        transform: translate3d(-50%, -50%, 0);
 }
 
